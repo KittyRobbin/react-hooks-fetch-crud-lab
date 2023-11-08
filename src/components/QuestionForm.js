@@ -10,18 +10,19 @@ function QuestionForm(props) {
     correctIndex: 0,
   });
 
-  function handleChange(event) {
+ function handleChange(event) {
     setFormData({
       ...formData,
       [event.target.name]: event.target.value,
     });
   }
+  
 
-  function handleSubmit(event) {
+ function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
   }
-
+  
   return (
     <section>
       <h1>New Question</h1>
